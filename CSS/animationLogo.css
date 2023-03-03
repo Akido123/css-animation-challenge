@@ -1,0 +1,21 @@
+img{
+  width: 500px;
+}
+
+img:hover{
+  animation-name: animatedLogo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animatedLogo{
+  0% {background-color: blue;}
+  25% {background-color: green;
+  transform: translateY(250px);}
+  50% {background-color: yellow;
+  transform: translateX(250px);}
+  75%{background-color: red;
+  transform: translateY(-250px);}
+  100% {background-color: white;
+  transform: translateX(-250px);}
+}
